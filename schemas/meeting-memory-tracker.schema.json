@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Meeting Memory Tracker",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["meetingTitle", "date", "summary", "decisions", "actionItems", "memoryProposal"],
+  "properties": {
+    "meetingTitle": { "type": "string" },
+    "date": { "type": "string", "format": "date" },
+    "summary": { "type": "string" },
+    "decisions": { "type": "array", "items": { "type": "string" } },
+    "actionItems": { "type": "array", "items": { "type": "string" } },
+    "memoryProposal": { "type": "string" }
+  }
+}

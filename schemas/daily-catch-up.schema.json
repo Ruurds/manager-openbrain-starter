@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Daily Catch-Up",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["reportDate", "mode", "executiveSummary", "needsAttention", "memoryProposal"],
+  "properties": {
+    "reportDate": { "type": "string", "format": "date" },
+    "mode": { "type": "string" },
+    "executiveSummary": { "type": "string" },
+    "needsAttention": { "type": "array", "items": { "type": "string" } },
+    "memoryProposal": { "type": "string" }
+  }
+}

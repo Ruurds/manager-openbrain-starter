@@ -1,0 +1,20 @@
+{
+  "name": "Example Importer",
+  "slug": "example-importer",
+  "sourceType": "manual",
+  "defaultMode": "dry-run",
+  "requiresApprovalForMemoryWrites": true,
+  "supportsDryRun": true,
+  "supportsLimit": true,
+  "supportsSyncLog": true,
+  "usesContentFingerprint": true,
+  "externalEmbeddingsAllowedByDefault": false,
+  "prohibitedData": [
+    "secrets",
+    "raw customer data",
+    "full confidential documents",
+    "full email bodies",
+    "call recordings",
+    "full transcripts"
+  ]
+}

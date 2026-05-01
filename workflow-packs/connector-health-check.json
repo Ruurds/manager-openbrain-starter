@@ -1,0 +1,16 @@
+{
+  "$schema": "workflow-pack.schema.json",
+  "name": "Connector Health Check",
+  "slug": "connector-health-check",
+  "category": "workflow",
+  "defaultMode": "read-only",
+  "workflow": "workflows/connector-health-check.md",
+  "prompt": "prompts/connector-health-check.md",
+  "schema": "schemas/connector-health-check.schema.json",
+  "example": "examples/connector-health-check-sample.md",
+  "requiredConnectors": [],
+  "optionalConnectors": ["approved app connectors", "approved MCP servers"],
+  "writeRequiresApproval": true,
+  "memoryWritesRequireApproval": true,
+  "outputs": ["connector inventory", "scope notes", "safe smoke-test plan", "risks", "recommended fixes"]
+}

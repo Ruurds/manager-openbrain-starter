@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Ruurds/Setup-OpenBrain/workflow-packs/workflow-pack.schema.json",
+  "title": "OpenBrain Workflow Pack Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "name",
+    "slug",
+    "category",
+    "defaultMode",
+    "workflow",
+    "prompt",
+    "schema",
+    "example",
+    "requiredConnectors",
+    "optionalConnectors",
+    "writeRequiresApproval",
+    "memoryWritesRequireApproval",
+    "outputs"
+  ],
+  "properties": {
+    "name": { "type": "string", "minLength": 1 },
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "category": { "type": "string", "enum": ["workflow"] },
+    "defaultMode": { "type": "string", "enum": ["read-only", "draft-only"] },
+    "workflow": { "type": "string", "pattern": "^workflows/.+\\.md$" },
+    "prompt": { "type": "string", "pattern": "^prompts/.+\\.md$" },
+    "schema": { "type": "string", "pattern": "^schemas/.+\\.schema\\.json$" },
+    "example": { "type": "string", "pattern": "^examples/.+" },
+    "requiredConnectors": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "optionalConnectors": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "writeRequiresApproval": { "type": "boolean" },
+    "memoryWritesRequireApproval": { "type": "boolean" },
+    "outputs": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "notes": { "type": "array", "items": { "type": "string", "minLength": 1 } }
+  }
+}

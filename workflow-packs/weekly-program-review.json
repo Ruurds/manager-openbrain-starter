@@ -1,0 +1,16 @@
+{
+  "$schema": "workflow-pack.schema.json",
+  "name": "Weekly Program Review",
+  "slug": "weekly-program-review",
+  "category": "workflow",
+  "defaultMode": "read-only",
+  "workflow": "workflows/weekly-program-review.md",
+  "prompt": "prompts/weekly-program-review.md",
+  "schema": "schemas/weekly-program-review.schema.json",
+  "example": "examples/weekly-program-review-sample.md",
+  "requiredConnectors": [],
+  "optionalConnectors": ["tickets", "documents", "chat", "local memory"],
+  "writeRequiresApproval": true,
+  "memoryWritesRequireApproval": true,
+  "outputs": ["executive summary", "movement", "risks", "dependencies", "decisions needed", "memory updates proposed"]
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Risk And Dependency Review",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["reportDate", "scope", "risks", "dependencies", "decisionsNeeded"],
+  "properties": {
+    "reportDate": { "type": "string", "format": "date" },
+    "scope": { "type": "string" },
+    "risks": { "type": "array", "items": { "type": "string" } },
+    "dependencies": { "type": "array", "items": { "type": "string" } },
+    "decisionsNeeded": { "type": "array", "items": { "type": "string" } }
+  }
+}

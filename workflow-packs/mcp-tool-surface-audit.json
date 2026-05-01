@@ -1,0 +1,25 @@
+{
+  "$schema": "workflow-pack.schema.json",
+  "name": "MCP Tool Surface Audit",
+  "slug": "mcp-tool-surface-audit",
+  "category": "workflow",
+  "defaultMode": "read-only",
+  "workflow": "workflows/mcp-tool-surface-audit.md",
+  "prompt": "prompts/mcp-tool-surface-audit.md",
+  "schema": "schemas/mcp-tool-surface-audit.schema.json",
+  "example": "examples/mcp-tool-surface-audit-sample.md",
+  "requiredConnectors": [],
+  "optionalConnectors": ["claude-mcp", "codex-mcp", "app-connectors"],
+  "writeRequiresApproval": true,
+  "memoryWritesRequireApproval": true,
+  "outputs": [
+    "tool inventory",
+    "tool-count risk summary",
+    "read/write/admin classification",
+    "workflow scoping recommendations",
+    "memory proposal"
+  ],
+  "notes": [
+    "Phase 1 is inventory-only. Do not run live smoke tests unless separately approved."
+  ]
+}

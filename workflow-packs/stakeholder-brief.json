@@ -1,0 +1,16 @@
+{
+  "$schema": "workflow-pack.schema.json",
+  "name": "Stakeholder Brief",
+  "slug": "stakeholder-brief",
+  "category": "workflow",
+  "defaultMode": "draft-only",
+  "workflow": "workflows/stakeholder-brief.md",
+  "prompt": "prompts/stakeholder-brief.md",
+  "schema": "schemas/stakeholder-brief.schema.json",
+  "example": "examples/stakeholder-brief-sample.md",
+  "requiredConnectors": [],
+  "optionalConnectors": ["documents", "tickets", "local notes", "local memory"],
+  "writeRequiresApproval": true,
+  "memoryWritesRequireApproval": true,
+  "outputs": ["headline", "current state", "progress", "risks", "decisions needed", "asks", "proposed message"]
+}

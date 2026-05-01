@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Connector Health Check",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["reportDate", "mode", "summary", "risks", "nextActions"],
+  "properties": {
+    "reportDate": { "type": "string", "format": "date" },
+    "mode": { "type": "string" },
+    "summary": { "type": "string" },
+    "risks": { "type": "array", "items": { "type": "string" } },
+    "nextActions": { "type": "array", "items": { "type": "string" } }
+  }
+}

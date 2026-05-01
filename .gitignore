@@ -1,0 +1,41 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local secrets and live client configuration
+.env
+.env.*
+*.local
+*.secret
+*.token
+*.pem
+*.key
+*.p12
+*.crt
+credentials/
+.claude/
+.codex/
+.claude.json
+.mcp.json
+config.toml
+auth.json
+token*
+
+# Local outputs
+reports/
+logs/
+backups/
+tool-results/
+*.log
+*.tar
+*.tar.gz
+*.tar.gz.enc
+*.sha256
+
+# Dependency/build output
+node_modules/
+dist/
+build/

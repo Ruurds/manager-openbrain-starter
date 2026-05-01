@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Weekly Program Review",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["weekEnding", "executiveSummary", "movement", "risks", "decisionsNeeded", "memoryUpdatesProposed"],
+  "properties": {
+    "weekEnding": { "type": "string", "format": "date" },
+    "executiveSummary": { "type": "string" },
+    "movement": { "type": "array", "items": { "type": "string" } },
+    "risks": { "type": "array", "items": { "type": "string" } },
+    "decisionsNeeded": { "type": "array", "items": { "type": "string" } },
+    "memoryUpdatesProposed": { "type": "array", "items": { "type": "string" } }
+  }
+}

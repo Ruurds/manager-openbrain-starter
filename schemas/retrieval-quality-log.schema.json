@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Ruurds/Setup-OpenBrain/schemas/retrieval-quality-log.schema.json",
+  "title": "OpenBrain Retrieval Quality Log Entry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "timestamp",
+    "workflow",
+    "query",
+    "filters",
+    "resultCount",
+    "selectedMemoryIds",
+    "usefulness",
+    "notes",
+    "followUpAction"
+  ],
+  "properties": {
+    "timestamp": { "type": "string", "format": "date-time" },
+    "workflow": { "type": "string", "minLength": 1 },
+    "query": { "type": "string", "minLength": 1 },
+    "filters": { "type": "object" },
+    "resultCount": { "type": "integer", "minimum": 0 },
+    "selectedMemoryIds": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "usefulness": {
+      "type": "string",
+      "enum": ["useful", "partial", "not_useful", "false_positive", "missed_expected", "not_reviewed"]
+    },
+    "notes": { "type": "string" },
+    "followUpAction": {
+      "type": "string",
+      "enum": ["none", "review_memory", "supersede_memory", "mark_wrong", "archive_memory", "improve_query", "adjust_workflow"]
+    }
+  }
+}

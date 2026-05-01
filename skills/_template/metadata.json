@@ -1,0 +1,12 @@
+{
+  "name": "Template Skill",
+  "slug": "template-skill",
+  "category": "skill",
+  "description": "Template for sanitized OpenBrain skill packages.",
+  "version": "0.1.0",
+  "supportedClients": ["codex", "claude-code", "other"],
+  "relatedWorkflowPacks": [],
+  "writeRequiresApproval": true,
+  "memoryWritesRequireApproval": true,
+  "status": "template"
+}

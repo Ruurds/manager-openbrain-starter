@@ -1,0 +1,16 @@
+{
+  "$schema": "workflow-pack.schema.json",
+  "name": "Daily Catch-Up",
+  "slug": "daily-catch-up",
+  "category": "workflow",
+  "defaultMode": "read-only",
+  "workflow": "workflows/daily-catch-up.md",
+  "prompt": "prompts/daily-catch-up.md",
+  "schema": "schemas/daily-catch-up.schema.json",
+  "example": "examples/daily-catch-up-sample.md",
+  "requiredConnectors": [],
+  "optionalConnectors": ["calendar", "email", "chat", "documents", "tickets", "local memory"],
+  "writeRequiresApproval": true,
+  "memoryWritesRequireApproval": true,
+  "outputs": ["executive summary", "needs attention", "reply queue", "meeting prep", "memory proposal"]
+}

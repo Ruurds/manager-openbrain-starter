@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Stakeholder Brief",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["audience", "headline", "currentState", "risks", "asks"],
+  "properties": {
+    "audience": { "type": "string" },
+    "headline": { "type": "string" },
+    "currentState": { "type": "string" },
+    "risks": { "type": "array", "items": { "type": "string" } },
+    "asks": { "type": "array", "items": { "type": "string" } }
+  }
+}

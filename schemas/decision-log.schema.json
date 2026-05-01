@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Decision Log",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["decision", "context", "owner", "date", "rationale"],
+  "properties": {
+    "decision": { "type": "string" },
+    "context": { "type": "string" },
+    "owner": { "type": "string" },
+    "date": { "type": "string", "format": "date" },
+    "rationale": { "type": "string" }
+  }
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "sourceId": "example-source-record-1",
+    "sourcePointer": "examples/source/example.md",
+    "sourceTimestamp": "2026-05-01T09:00:00Z",
+    "hashOfSource": "example-source-hash",
+    "contentFingerprint": "0000000000000000000000000000000000000000000000000000000000000000",
+    "memoryId": null,
+    "status": "dry-run",
+    "reason": "candidate only; no memory write executed"
+  }
+]

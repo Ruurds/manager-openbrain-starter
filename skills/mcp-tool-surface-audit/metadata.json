@@ -1,0 +1,12 @@
+{
+  "name": "MCP Tool Surface Audit",
+  "slug": "mcp-tool-surface-audit",
+  "category": "skill",
+  "description": "Inventory-only tool-surface audit for visible MCP, app connector, plugin, and local tools.",
+  "version": "0.1.0",
+  "supportedClients": ["codex", "claude-code", "other"],
+  "relatedWorkflowPacks": ["mcp-tool-surface-audit"],
+  "writeRequiresApproval": true,
+  "memoryWritesRequireApproval": true,
+  "status": "active-template"
+}

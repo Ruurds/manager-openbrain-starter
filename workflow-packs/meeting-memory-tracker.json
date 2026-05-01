@@ -1,0 +1,16 @@
+{
+  "$schema": "workflow-pack.schema.json",
+  "name": "Meeting Memory Tracker",
+  "slug": "meeting-memory-tracker",
+  "category": "workflow",
+  "defaultMode": "draft-only",
+  "workflow": "workflows/meeting-memory-tracker.md",
+  "prompt": "prompts/meeting-memory-tracker.md",
+  "schema": "schemas/meeting-memory-tracker.schema.json",
+  "example": "examples/meeting-memory-tracker-sample.md",
+  "requiredConnectors": [],
+  "optionalConnectors": ["local notes", "documents", "tickets", "local memory"],
+  "writeRequiresApproval": true,
+  "memoryWritesRequireApproval": true,
+  "outputs": ["summary", "decisions", "action items", "open questions", "draft follow-ups", "memory proposal"]
+}

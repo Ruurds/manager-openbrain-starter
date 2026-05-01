@@ -1,0 +1,16 @@
+{
+  "$schema": "workflow-pack.schema.json",
+  "name": "Risk And Dependency Review",
+  "slug": "risk-dependency-review",
+  "category": "workflow",
+  "defaultMode": "read-only",
+  "workflow": "workflows/risk-dependency-review.md",
+  "prompt": "prompts/risk-dependency-review.md",
+  "schema": "schemas/risk-dependency-review.schema.json",
+  "example": "examples/risk-dependency-review-sample.md",
+  "requiredConnectors": [],
+  "optionalConnectors": ["tickets", "documents", "local memory"],
+  "writeRequiresApproval": true,
+  "memoryWritesRequireApproval": true,
+  "outputs": ["risk summary", "dependency map", "blockers", "owner/action table", "decisions needed", "memory proposal"]
+}
