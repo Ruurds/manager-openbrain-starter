@@ -1,6 +1,6 @@
 # Contributing to Manager OpenBrain Starter
 
-Thanks for your interest. This is a practical scaffold, not a framework project — contributions should stay focused on making it more useful for managers in real work situations.
+Thanks for your interest. This is a practical scaffold, not a framework project. Contributions should stay focused on making it more useful for managers in real work situations.
 
 ## What Good Contributions Look Like
 
@@ -14,7 +14,7 @@ Thanks for your interest. This is a practical scaffold, not a framework project 
 
 - Company-specific systems, credentials, or internal tool references
 - Workflows that require proprietary or non-generic connectors
-- AI hype or feature bloat — this repo values less over more
+- AI hype or feature bloat; this repo values less over more
 - Breaking changes to the core principles (read-only first, human approval, local-first)
 
 ## How to Contribute
@@ -41,4 +41,4 @@ Thanks for your interest. This is a practical scaffold, not a framework project 
 
 ## Questions
 
-Open a GitHub Discussion or file an issue before building something large — it saves everyone time if the idea does not fit the scope.
+File an issue before building something large. It saves everyone time if the idea does not fit the scope.

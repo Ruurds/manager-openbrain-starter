@@ -25,11 +25,18 @@ All notable scaffold changes are recorded here. Keep entries concise and user-fa
 - Added optional local Qdrant setup with Docker Compose, env template, and collection creation script.
 - Added contribution guidelines.
 - Added GitHub Actions CI for local-only scaffold validation.
+- Added public-project compliance files:
+  - `SECURITY.md`
+  - `CODE_OF_CONDUCT.md`
+  - `SUPPORT.md`
+  - `.github/pull_request_template.md`
+  - `.github/dependabot.yml`
 
 ### Changed
 
 - Sharpened the README pitch around local-first AI operating rhythms for managers and directors.
 - Kept Docker/Qdrant optional by default so the starter remains usable before memory is configured.
+- Updated contribution wording to match the currently enabled GitHub features.
 
 ### Guardrails
 

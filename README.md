@@ -72,8 +72,9 @@ templates/
 
 1. Read [docs/quickstart.md](docs/quickstart.md).
 2. Read [docs/operating-principles.md](docs/operating-principles.md).
-3. Review [CHANGELOG.md](CHANGELOG.md) when you want to understand recent scaffold changes.
-4. Start or restart the day with the local-only morning cockpit:
+3. Review [SECURITY.md](SECURITY.md) and [CONTRIBUTING.md](CONTRIBUTING.md) before sharing changes.
+4. Review [CHANGELOG.md](CHANGELOG.md) when you want to understand recent scaffold changes.
+5. Start or restart the day with the local-only morning cockpit:
 
    ```bash
    scripts/openbrain_morning_start.py
@@ -81,15 +82,15 @@ templates/
 
    See [docs/daily-operating-regime.md](docs/daily-operating-regime.md) for the daily loop and day-by-day cadence.
 
-5. Run the repo hygiene check:
+6. Run the repo hygiene check:
 
    ```bash
    scripts/validate_repo_hygiene.py
    ```
 
-6. Optional: if you want local vector memory, follow [docs/local-memory-setup.md](docs/local-memory-setup.md).
+7. Optional: if you want local vector memory, follow [docs/local-memory-setup.md](docs/local-memory-setup.md).
 
-7. Start with these workflow packs:
+8. Start with these workflow packs:
    - [workflows/mcp-tool-surface-audit.md](workflows/mcp-tool-surface-audit.md)
    - [workflows/connector-health-check.md](workflows/connector-health-check.md)
    - [workflows/daily-catch-up.md](workflows/daily-catch-up.md)
@@ -110,4 +111,12 @@ templates/
 
 ## Current Status
 
-Initial scaffold. No live connectors are configured by this repo. No memory backend is required to use the workflow templates.
+Usable starter scaffold. It includes workflow packs, prompts, schemas, examples, repo hygiene CI, contribution guidelines, security policy, optional local Qdrant setup, and a morning/restart routine. No live connectors are configured by this repo. No memory backend is required to use the workflow templates.
+
+## Project Governance
+
+- [LICENSE](LICENSE): MIT.
+- [SECURITY.md](SECURITY.md): vulnerability reporting and security boundaries.
+- [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md): expected behavior for project spaces.
+- [SUPPORT.md](SUPPORT.md): where to get help and what is out of scope.
+- [CONTRIBUTING.md](CONTRIBUTING.md): contribution scope and safety checklist.
