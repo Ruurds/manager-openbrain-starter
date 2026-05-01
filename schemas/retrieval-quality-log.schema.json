@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Ruurds/Setup-OpenBrain/schemas/retrieval-quality-log.schema.json",
+  "$id": "https://github.com/Ruurds/manager-openbrain-starter/schemas/retrieval-quality-log.schema.json",
   "title": "OpenBrain Retrieval Quality Log Entry",
   "type": "object",
   "additionalProperties": false,

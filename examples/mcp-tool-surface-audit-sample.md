@@ -2,7 +2,7 @@
 
 Report date: 2026-05-01
 Client: Codex
-Working directory: `/Users/example/Documents/Setup OpenBrain`
+Working directory: `/Users/example/projects/manager-openbrain-starter`
 Target workflow: weekly program review
 Mode: read-only inventory
 

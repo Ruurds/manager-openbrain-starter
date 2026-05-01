@@ -4,6 +4,10 @@ version = "0.1.0"
 requires-python = ">=3.12"
 description = "Local-first AI operating system scaffold for managers"
 
+[project.urls]
+Homepage = "https://github.com/Ruurds/manager-openbrain-starter"
+Repository = "https://github.com/Ruurds/manager-openbrain-starter"
+
 [tool.ruff]
 line-length = 100
 target-version = "py312"
