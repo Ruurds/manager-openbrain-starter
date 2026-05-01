@@ -48,6 +48,7 @@ Drafting is fine. Sending, posting, commenting, updating tickets, editing docs, 
 
 If you add local memory, use the import and retrieval standards first:
 
+- [local-memory-setup.md](local-memory-setup.md)
 - [import-recipe-standard.md](import-recipe-standard.md)
 - [retrieval-quality-logging.md](retrieval-quality-logging.md)
 

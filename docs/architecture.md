@@ -21,6 +21,7 @@ Manager OpenBrain is a thin operating layer over existing tools.
 5. Optional memory
    - Local-first vector memory for approved summaries and source pointers.
    - External memory only after explicit approval for the data class.
+   - Local Qdrant setup is documented in [local-memory-setup.md](local-memory-setup.md).
 
 ## Recommended Flow
 

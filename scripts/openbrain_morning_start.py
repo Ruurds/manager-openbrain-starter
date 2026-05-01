@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_QDRANT_URL = "http://127.0.0.1:6333"
 DEFAULT_COLLECTION = "manager_openbrain_memory_v1"
 DEFAULT_CONTAINER = "manager-openbrain-qdrant"
-DEFAULT_ENV_FILE = Path.home() / ".config" / "manager-openbrain" / "qdrant.env"
+DEFAULT_ENV_FILE = ROOT / ".env.qdrant"
 
 
 @dataclass

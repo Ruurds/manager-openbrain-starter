@@ -1,0 +1,21 @@
+name: manager-openbrain-starter
+
+services:
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: ${MANAGER_OPENBRAIN_QDRANT_CONTAINER:-manager-openbrain-qdrant}
+    restart: unless-stopped
+    env_file:
+      - .env.qdrant
+    environment:
+      QDRANT__TELEMETRY_DISABLED: "true"
+    ports:
+      - "127.0.0.1:6333:6333"
+      - "127.0.0.1:6334:6334"
+    volumes:
+      - manager_openbrain_qdrant_storage:/qdrant/storage
+      - manager_openbrain_qdrant_snapshots:/qdrant/snapshots
+
+volumes:
+  manager_openbrain_qdrant_storage:
+  manager_openbrain_qdrant_snapshots:

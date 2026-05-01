@@ -16,6 +16,7 @@ Manager OpenBrain is a local-first scaffold for:
 - connector health checks
 - tool-surface audits
 - memory governance
+- optional local Qdrant memory setup
 - retrieval quality feedback
 
 ## Principles
@@ -61,7 +62,9 @@ templates/
    scripts/validate_repo_hygiene.py
    ```
 
-5. Start with these workflow packs:
+5. Optional: if you want local vector memory, follow [docs/local-memory-setup.md](docs/local-memory-setup.md).
+
+6. Start with these workflow packs:
    - [workflows/mcp-tool-surface-audit.md](workflows/mcp-tool-surface-audit.md)
    - [workflows/connector-health-check.md](workflows/connector-health-check.md)
    - [workflows/daily-catch-up.md](workflows/daily-catch-up.md)

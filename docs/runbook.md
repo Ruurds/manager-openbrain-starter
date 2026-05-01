@@ -16,6 +16,17 @@ scripts/openbrain_morning_start.py --expect-memory
 
 See [daily-operating-regime.md](daily-operating-regime.md) for the daily loop, restart routine, and day-by-day cadence.
 
+## Local Memory Setup
+
+Optional Qdrant memory setup is documented in [local-memory-setup.md](local-memory-setup.md).
+
+After setup:
+
+```bash
+scripts/create_memory_collection.py
+scripts/openbrain_morning_start.py --expect-memory
+```
+
 ## Repo Hygiene
 
 ```bash
