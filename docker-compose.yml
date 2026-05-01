@@ -2,7 +2,7 @@ name: manager-openbrain-starter
 
 services:
   qdrant:
-    image: qdrant/qdrant:latest
+    image: qdrant/qdrant:v1.17.1
     container_name: ${MANAGER_OPENBRAIN_QDRANT_CONTAINER:-manager-openbrain-qdrant}
     restart: unless-stopped
     env_file:

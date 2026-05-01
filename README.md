@@ -1,6 +1,8 @@
 # Manager OpenBrain Starter
 
 ![Repo Hygiene](https://github.com/Ruurds/manager-openbrain-starter/actions/workflows/ci.yml/badge.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue.svg)
 
 A local-first AI operating system for managers who are drowning in meetings, decisions, follow-ups, and scattered context.
 
