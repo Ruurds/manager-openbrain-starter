@@ -54,6 +54,16 @@ Manager OpenBrain is a local-first scaffold for:
 - Keep secrets and live client config out of Git.
 - Prefer local memory until an always-on need is proven and approved.
 
+## Trust And Safety
+
+This repo is designed to be safe to fork and adapt:
+
+- CI checks repo hygiene, broken links, malformed JSON, workflow manifest completeness, executable scripts, and secret-shaped content.
+- Branch protection requires the scaffold validation workflow before changes land on `main`.
+- The repo includes a security policy, contribution guide, code of conduct, support guide, changelog, issue templates, and pull request template.
+- Local memory is optional and binds Qdrant to `127.0.0.1` by default.
+- No live connectors, credentials, raw exports, or company-specific configuration are included.
+
 ## Repo Shape
 
 ```text
