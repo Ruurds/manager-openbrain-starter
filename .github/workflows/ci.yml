@@ -1,0 +1,34 @@
+name: Repo Hygiene
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate Scaffold
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run repo hygiene checks
+        run: scripts/validate_repo_hygiene.py
+
+      - name: Compile Python scripts
+        run: python -m compileall -q scripts
+
+      - name: Run local-only startup check
+        run: scripts/openbrain_morning_start.py --skip-docker --skip-qdrant --no-report

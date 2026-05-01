@@ -1,0 +1,38 @@
+# Changelog
+
+All notable scaffold changes are recorded here. Keep entries concise and user-facing.
+
+## 2026-05-01
+
+### Added
+
+- Created the neutral Manager OpenBrain starter scaffold.
+- Added reusable workflow packs for:
+  - daily catch-up
+  - meeting memory tracking
+  - weekly program review
+  - decision logging
+  - stakeholder briefs
+  - risk and dependency review
+  - connector health checks
+  - MCP tool-surface audits
+- Added matching prompts, schemas, examples, and workflow manifests.
+- Added repo hygiene validation through `scripts/validate_repo_hygiene.py`.
+- Added local retrieval-quality logging through `scripts/log_retrieval_quality.py`.
+- Added a sanitized skill package template and first example skill.
+- Added architecture documentation and Mermaid diagram.
+- Added daily operating regime and restart/morning startup script.
+- Added optional local Qdrant setup with Docker Compose, env template, and collection creation script.
+- Added contribution guidelines.
+- Added GitHub Actions CI for local-only scaffold validation.
+
+### Changed
+
+- Sharpened the README pitch around local-first AI operating rhythms for managers and directors.
+- Kept Docker/Qdrant optional by default so the starter remains usable before memory is configured.
+
+### Guardrails
+
+- No live connectors are configured by this repo.
+- No credentials, raw company exports, or live agent configuration should be committed.
+- External writes and memory writes remain approval-gated.

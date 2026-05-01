@@ -1,5 +1,7 @@
 # Manager OpenBrain Starter
 
+![Repo Hygiene](https://github.com/Ruurds/manager-openbrain-starter/actions/workflows/ci.yml/badge.svg)
+
 A local-first AI operating system for managers who are drowning in meetings, decisions, follow-ups, and scattered context.
 
 Manager OpenBrain helps managers, product leads, program leads, and directors turn daily chaos into a repeatable operating rhythm. It gives them structured workflows for catch-ups, meeting memory, decisions, stakeholder briefs, risk reviews, and weekly program updates, while keeping sensitive work local-first and approval-gated.
@@ -68,7 +70,8 @@ templates/
 
 1. Read [docs/quickstart.md](docs/quickstart.md).
 2. Read [docs/operating-principles.md](docs/operating-principles.md).
-3. Start or restart the day with the local-only morning cockpit:
+3. Review [CHANGELOG.md](CHANGELOG.md) when you want to understand recent scaffold changes.
+4. Start or restart the day with the local-only morning cockpit:
 
    ```bash
    scripts/openbrain_morning_start.py
@@ -76,15 +79,15 @@ templates/
 
    See [docs/daily-operating-regime.md](docs/daily-operating-regime.md) for the daily loop and day-by-day cadence.
 
-4. Run the repo hygiene check:
+5. Run the repo hygiene check:
 
    ```bash
    scripts/validate_repo_hygiene.py
    ```
 
-5. Optional: if you want local vector memory, follow [docs/local-memory-setup.md](docs/local-memory-setup.md).
+6. Optional: if you want local vector memory, follow [docs/local-memory-setup.md](docs/local-memory-setup.md).
 
-6. Start with these workflow packs:
+7. Start with these workflow packs:
    - [workflows/mcp-tool-surface-audit.md](workflows/mcp-tool-surface-audit.md)
    - [workflows/connector-health-check.md](workflows/connector-health-check.md)
    - [workflows/daily-catch-up.md](workflows/daily-catch-up.md)
