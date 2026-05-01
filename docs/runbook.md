@@ -1,5 +1,21 @@
 # Runbook
 
+## Morning Startup
+
+```bash
+scripts/openbrain_morning_start.py
+```
+
+This runs local-only startup checks for Git state, repo hygiene, optional Docker/Qdrant memory, recent reports, and recent commits. It does not call live connectors or write memory.
+
+Use this stricter mode after local memory has been configured:
+
+```bash
+scripts/openbrain_morning_start.py --expect-memory
+```
+
+See [daily-operating-regime.md](daily-operating-regime.md) for the daily loop, restart routine, and day-by-day cadence.
+
 ## Repo Hygiene
 
 ```bash

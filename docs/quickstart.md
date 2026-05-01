@@ -4,6 +4,14 @@ This starter works without a memory backend or live connectors. Start with local
 
 ## 1. Validate The Repo
 
+Start with the local-only morning cockpit:
+
+```bash
+scripts/openbrain_morning_start.py
+```
+
+Then run the hygiene validator directly if you want the raw check output:
+
 ```bash
 scripts/validate_repo_hygiene.py
 ```

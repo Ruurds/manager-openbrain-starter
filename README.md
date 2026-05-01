@@ -47,13 +47,21 @@ templates/
 
 1. Read [docs/quickstart.md](docs/quickstart.md).
 2. Read [docs/operating-principles.md](docs/operating-principles.md).
-3. Run the repo hygiene check:
+3. Start or restart the day with the local-only morning cockpit:
+
+   ```bash
+   scripts/openbrain_morning_start.py
+   ```
+
+   See [docs/daily-operating-regime.md](docs/daily-operating-regime.md) for the daily loop and day-by-day cadence.
+
+4. Run the repo hygiene check:
 
    ```bash
    scripts/validate_repo_hygiene.py
    ```
 
-4. Start with these workflow packs:
+5. Start with these workflow packs:
    - [workflows/mcp-tool-surface-audit.md](workflows/mcp-tool-surface-audit.md)
    - [workflows/connector-health-check.md](workflows/connector-health-check.md)
    - [workflows/daily-catch-up.md](workflows/daily-catch-up.md)
