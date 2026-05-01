@@ -1,8 +1,28 @@
 # Manager OpenBrain Starter
 
-Neutral starter kit for managers, product leaders, program leads, and directors who want an AI-assisted work memory and operating rhythm without rebuilding the whole foundation from scratch.
+A local-first AI operating system for managers who are drowning in meetings, decisions, follow-ups, and scattered context.
+
+Manager OpenBrain helps managers, product leads, program leads, and directors turn daily chaos into a repeatable operating rhythm. It gives them structured workflows for catch-ups, meeting memory, decisions, stakeholder briefs, risk reviews, and weekly program updates, while keeping sensitive work local-first and approval-gated.
+
+Not a chatbot. Not a notes app. Not another dashboard.
+
+This is a practical starter kit for making AI useful in the daily work of management without rebuilding the whole foundation from scratch.
 
 This repo is intentionally generic. It should not contain company-specific systems, credentials, private documents, operational payloads, or live agent configuration.
+
+## Why Managers Would Want This
+
+Managers do not want another tool to maintain. They want less rework, fewer forgotten decisions, and faster context recovery.
+
+This starter gives them:
+
+- A morning startup routine: what changed, what matters, and what should happen next.
+- A restart routine for laptop restarts, context loss, vacations, or long gaps.
+- Meeting memory so decisions, actions, open questions, and follow-ups do not disappear.
+- A weekly program rhythm for risks, dependencies, movement, decisions, and stale assumptions.
+- Safer AI use: read-only first, draft-only writes, human approval before posting or storing memory.
+- Optional local memory with Qdrant and Docker for durable recall without sending everything to a cloud memory service.
+- A reusable scaffold: prompts, workflows, schemas, examples, scripts, skills, and guardrails in one place.
 
 ## What This Is
 
