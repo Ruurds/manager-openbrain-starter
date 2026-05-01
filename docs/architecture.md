@@ -28,6 +28,36 @@ Manager OpenBrain is a thin operating layer over existing tools.
 source systems -> read-only evidence -> local report/draft -> approval gate -> optional write or memory update
 ```
 
+## Architecture Diagram
+
+```mermaid
+flowchart TD
+    U["Manager or Director"] --> A["AI Client<br/>Codex / Claude Code / ChatGPT"]
+
+    A --> B["Tool Boundary<br/>MCP servers and app connectors"]
+    B --> C["Read-only Evidence<br/>Slack / Jira / Docs / Email / Local files"]
+
+    A --> D["Workflow Library"]
+    D --> D1["prompts/"]
+    D --> D2["workflows/"]
+    D --> D3["schemas/"]
+    D --> D4["examples/"]
+    D --> D5["workflow-packs/"]
+    D --> D6["skills/"]
+
+    C --> E["Local Drafts and Reports<br/>reports/ ignored by Git"]
+    D --> E
+
+    E --> F["Approval Gate<br/>human review before writes"]
+
+    F --> G["Optional Writes<br/>docs, tickets, messages, status updates"]
+    F --> H["Optional Memory<br/>approved summaries and source pointers"]
+
+    I["Validation Scripts"] --> D
+    I --> E
+    I --> J["Repo Hygiene Checks"]
+```
+
 ## Non-Goals
 
 - This repo is not a notes app.
