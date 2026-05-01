@@ -238,7 +238,7 @@ def check_schema_ids(files: Iterable[Path], result: Result) -> None:
         result.pass_("schema $id URLs reference this repository")
 
 
-
+def check_workflow_manifests(result: Result) -> None:
     manifest_dir = ROOT / "workflow-packs"
     if not manifest_dir.exists():
         result.warn("workflow-packs/ does not exist yet")
