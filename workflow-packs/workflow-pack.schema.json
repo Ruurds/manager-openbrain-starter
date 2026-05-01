@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Ruurds/Setup-OpenBrain/workflow-packs/workflow-pack.schema.json",
+  "$id": "https://github.com/Ruurds/manager-openbrain-starter/workflow-packs/workflow-pack.schema.json",
   "title": "OpenBrain Workflow Pack Manifest",
   "type": "object",
   "additionalProperties": false,

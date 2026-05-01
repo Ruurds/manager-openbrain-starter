@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/Ruurds/Setup-OpenBrain/schemas/mcp-tool-surface-audit.schema.json",
+  "$id": "https://github.com/Ruurds/manager-openbrain-starter/schemas/mcp-tool-surface-audit.schema.json",
   "title": "MCP Tool Surface Audit",
   "type": "object",
   "additionalProperties": false,

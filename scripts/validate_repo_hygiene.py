@@ -214,6 +214,30 @@ def load_json(path: Path) -> dict[str, object] | None:
     return data if isinstance(data, dict) else None
 
 
+REPO_SLUG = "Ruurds/manager-openbrain-starter"
+EXPECTED_SCHEMA_ID_PREFIX = f"https://github.com/{REPO_SLUG}/"
+
+
+def check_schema_ids(files: Iterable[Path], result: Result) -> None:
+    bad: list[str] = []
+    for path in files:
+        if not (path.suffix == ".json" or path.as_posix().endswith(".schema.json")):
+            continue
+        data = load_json(path)
+        if data is None:
+            continue
+        schema_id = data.get("$id")
+        if not isinstance(schema_id, str):
+            continue
+        if not schema_id.startswith(EXPECTED_SCHEMA_ID_PREFIX):
+            bad.append(f"{path.as_posix()}: $id does not reference this repo ({schema_id!r})")
+
+    if bad:
+        result.fail("schema $id URL mismatch: " + "; ".join(bad))
+    else:
+        result.pass_("schema $id URLs reference this repository")
+
+
 def check_workflow_manifests(result: Result) -> None:
     manifest_dir = ROOT / "workflow-packs"
     if not manifest_dir.exists():
@@ -353,6 +377,7 @@ def main() -> int:
     check_live_config(files, result)
     check_secret_patterns(files, result)
     check_json_parse(files, result)
+    check_schema_ids(files, result)
     check_workflow_manifests(result)
     check_markdown_links(files, result)
     check_script_executability(files, result)
